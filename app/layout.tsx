@@ -25,9 +25,32 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <svg
+          aria-hidden
+          className="pointer-events-none fixed h-0 w-0 overflow-hidden"
+          focusable="false"
+        >
+          <defs>
+            <linearGradient
+              id="social-insta-gradient"
+              x1="0%"
+              y1="100%"
+              x2="100%"
+              y2="0%"
+            >
+              <stop offset="0%" stopColor="#f09433" />
+              <stop offset="25%" stopColor="#e6683c" />
+              <stop offset="50%" stopColor="#dc2743" />
+              <stop offset="75%" stopColor="#cc2366" />
+              <stop offset="100%" stopColor="#bc1888" />
+            </linearGradient>
+          </defs>
+        </svg>
+        {children}
+      </body>
     </html>
   );
 }
