@@ -113,7 +113,7 @@ const PersonalAbout = () => {
           </div>
 
           <a
-            href="#contact"
+            href="mailto:jayklav62@gmail.com"
             className="mt-8 inline-flex items-center gap-2 border-b-2 border-blue-400 pb-1 text-xl font-bold text-white transition-colors hover:text-blue-300"
           >
             Neem contact op <span aria-hidden="true">→</span>
